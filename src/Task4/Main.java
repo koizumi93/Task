@@ -20,6 +20,7 @@ public class Main {
 
         List<String> firstGradeStudentList = Students.stream().filter(s -> s.getGrade().contains("1年生"))
                 .map(s -> s.getName()).collect(Collectors.toList());
-        System.out.println(firstGradeStudentList);
+        //forEachを使って出力
+        firstGradeStudentList.forEach(System.out::println);
     }
 }
